@@ -71,16 +71,22 @@ header{
 }
 
 .main{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   height: 300px;
 }
 
 .main__title{
   color: white;
+  margin-bottom: 50px;
 }
 
 .input{
   background-color: rgba(255, 255, 255, 0.1);
   font-family: 'Mulish', sans-serif;
+  color:white;
   border: 3px solid white;
   border-radius: 30px;
   font-size: 16px;
@@ -96,9 +102,15 @@ header{
 
 .carrusel{
   width:100%;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
   padding: 30px;
   position: relative;
+}
+
+.carrusel h3{
+  font-family: 'Mulish', sans-serif;
+  color: white;
 }
 
 .carrusel__container{
@@ -158,3 +170,22 @@ header{
   height: 30px;
 }
 
+.footer{
+  display:flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background: #8f57fd;
+}
+
+.footer a{
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+}
